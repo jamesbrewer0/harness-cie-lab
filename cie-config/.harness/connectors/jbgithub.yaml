@@ -1,0 +1,23 @@
+connector:
+  name: jb-github
+  identifier: jbgithub
+  description:
+  orgIdentifier: JellyfishGroup
+  projectIdentifier: jbtest
+  type: Github
+  spec:
+    url: https://github.com/jamesbrewer0
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: jamesbrewer0
+          tokenRef: Github_Token
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: Github_Token
+    executeOnDelegate: true
+    type: Account
