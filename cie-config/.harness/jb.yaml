@@ -1,17 +1,14 @@
 connector:
   name: jb
   identifier: jb
-  description:
   orgIdentifier: JellyfishGroup
   projectIdentifier: jbtest
   type: DockerRegistry
   spec:
-    dockerRegistryUrl: https://hub.docker.com/repository/docker/jamesbrewer0/jb
+    dockerRegistryUrl: https://hub.docker.com/r/jamesbrewer0/jb
     providerType: DockerHub
     auth:
       type: UsernamePassword
       spec:
         username: jamesbrewer0
         passwordRef: jbdocker
-    delegateSelectors:
-    - gcp-harness
